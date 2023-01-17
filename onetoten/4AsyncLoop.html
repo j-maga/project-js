@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Asynchronous Loop</h1>
+    <p>Check console</p>
+    <script>
+        const asyncUC = item => new Promise(resolve =>
+        setTimeout(()=> resolve(item.toUpperCase()),
+        )
+        );
+
+        const upcaeItems = async() => {
+            const items = ['a', 'b', 'c'];
+            for(item of items)
+            {
+                const upcaeItems = await asyncUC(item);
+                console.log(upcaeItems);
+            }
+            console.log('Items Processed')
+        }
+        upcaeItems();
+    </script>
+</body>
+</html>

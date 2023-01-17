@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>del ele</title>
+</head>
+<body>
+<h1>Delete All Occurence</h1><br><br>
+<p>Array Elements</p>
+<p id="orgArray"></p><br><br>
+<p id="delelement"></p>
+<script>
+var cArr = ['m', 'a', 'g', 'a', 'l', 'a', 'x', 'm', 'i'];
+
+document.getElementById("orgArray").innerHTML = cArr;
+
+var del = prompt("Enter element to delete ", "a");
+
+function delEle(dele)
+{ return dele!=del; };
+
+document.getElementById("delelement").innerHTML = cArr.filter(delEle);
+</script>
+<p>Element is removed from the Array.</p>
+</body>
+</html>

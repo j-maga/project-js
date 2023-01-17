@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10 num</title>
+</head>
+<body>
+<h1>Recursive Numbers</h1>
+<script>
+
+	var start = prompt("Enter a Number");
+function Rec(num)
+{
+	document.write(num+"<br>");
+	console.log(num);
+
+	const newNum = num -1;
+
+	if(newNum > 0)
+	{
+		Rec(newNum);
+	}
+}
+Rec(start);
+</script>
+
+<p id = "num"></p>
+</body>
+</html>
